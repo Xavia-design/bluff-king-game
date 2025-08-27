@@ -13,38 +13,27 @@ body {
   max-width: 480px;
   margin: 2em auto;
 }
-.top-button {
-  border: 1px solid #333;
-  background-color: transparent;
-  color: #333;
-  font-size: 0.8em;
-  padding: 0.4em 0.8em;
-  border-radius: 4px;
-  margin-left: 0.5em;
-  cursor: pointer;
-  transition: background-color 0.2s, color 0.2s;
+.top-buttons {
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  display: flex;
+  gap: 0.5em;
 }
 
-.top-button:hover {
-  background-color: #333;
-  color: white;
-}
-.top-button:nth-child(1) { right: 5em; } /* 規則說明 */
-.top-button:nth-child(2) { right: 1em; } /* 分享遊戲 */
-.hidden { display: none; }
-button {
-  margin: 0.5em;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  border: none;
-  border-radius: 8px;
-  background: #4a90e2;
-  color: white;
+.top-buttons button {
+  font-size: 0.8em;
+  padding: 0.4em 0.8em;
+  border: 1px solid #333;
+  background: white;
+  color: #333;
+  border-radius: 5px;
   cursor: pointer;
-  min-width: 120px;
+  transition: background 0.2s, color 0.2s;
 }
-button:hover {
-  background: #357ab8;
+
+.top-buttons button:hover {
+  background: #f0f0f0;
 }
 .danger {
   background: #d9534f;
