@@ -216,6 +216,9 @@ function restartGame() {
   drawNewCard();
 }
 
+drawNewCard();
+
+
 function toggleRules() {
   document.getElementById("rulesModal").classList.toggle("hidden");
   document.getElementById("rulesBackdrop").classList.toggle("hidden");
