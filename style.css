@@ -13,6 +13,21 @@ body {
   max-width: 480px;
   margin: 2em auto;
 }
+button {
+  font-size: 1em;
+  padding: 0.5em 1em;
+  border: none;
+  border-radius: 6px;
+  background-color: #4285f4;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #3367d6;
+}
+
 .top-buttons {
   position: absolute;
   top: 1em;
