@@ -21,7 +21,7 @@ body {
   gap: 0.5em;
 }
 
-.top-buttons button {
+.top-btn {
   font-size: 0.8em;
   padding: 0.4em 0.8em;
   border: 1px solid #333;
@@ -32,7 +32,7 @@ body {
   transition: background 0.2s, color 0.2s;
 }
 
-.top-buttons button:hover {
+.top-btn:hover {
   background: #f0f0f0;
 }
 .danger {
