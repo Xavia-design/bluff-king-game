@@ -223,3 +223,22 @@ function toggleRules() {
   document.getElementById("rulesModal").classList.toggle("hidden");
   document.getElementById("rulesBackdrop").classList.toggle("hidden");
 }
+function shareLink() {
+  const url = window.location.href;
+
+  if (navigator.share) {
+    navigator.share({
+      title: '瞎掰王',
+      text: '一起來玩瞎掰王！這是連結：',
+      url: url
+    }).catch((error) => {
+      console.error('分享失敗', error);
+    });
+  } else {
+    navigator.clipboard.writeText(url).then(() => {
+      alert("連結已複製，快貼給朋友吧！");
+    }).catch((err) => {
+      alert("複製失敗，請手動複製網址");
+    });
+  }
+}
