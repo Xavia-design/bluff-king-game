@@ -29,6 +29,8 @@ body {
   background-color: #333;
   color: white;
 }
+.top-button:nth-child(1) { right: 5em; } /* 規則說明 */
+.top-button:nth-child(2) { right: 1em; } /* 分享遊戲 */
 .hidden { display: none; }
 button {
   margin: 0.5em;
