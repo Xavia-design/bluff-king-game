@@ -199,14 +199,20 @@ function togglePlayerRole(index) {
 }
 
 function restartGame() {
-  document.getElementById("playerCount").value = 6;
+  // 保留原本輸入的人數，不要重設成 6
+  const count = parseInt(document.getElementById("playerCount").value);
+  if (!isNaN(count) && count >= 3) {
+    roles = assignRoles(count);
+  }
+
   document.getElementById("playerButtons").innerHTML = "";
   document.getElementById("privateRoleDisplay").classList.add("hidden");
   document.getElementById("confirmHint").classList.add("hidden");
-  roles = [];
+
   revealed = {};
   locked = {};
   currentlyRevealing = null;
+
   drawNewCard();
 }
 
